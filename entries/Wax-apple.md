@@ -1,0 +1,1 @@
+The scientific name of wax-apple is Syzygium samarangense.

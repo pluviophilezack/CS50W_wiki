@@ -1,0 +1,52 @@
+# Python compiled files
+*.py[cod]
+*$py.class
+__pycache__/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+media/
+/staticfiles/
+/static_root/
+
+# Testing / coverage
+.pytest_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Environment variables
+.env
+.env.*
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Node
+node_modules/
+
+# Celery
+celerybeat-schedule
+
+# PyInstaller
+*.manifest
+*.spec

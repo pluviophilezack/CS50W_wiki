@@ -1,0 +1,1 @@
+Banana is a kind of tropical fruit.

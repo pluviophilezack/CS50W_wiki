@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit Page - {{ original_title }}
+{% endblock %}
+
+{% block body %}
+    <h1>Edit: <u>{{ original_title }}</u></h1>
+    <!-- Title of action should be the original title in order to let the server know which file will be edit -->
+    <form action="{% url 'edit_page' original_title=original_title%}" method="post">
+        {% csrf_token %}
+        <input type="text" autofocus placeholder="Title" name="edited_title" required value="{{ original_title }}">
+        <textarea required name="edited_content" placeholder="Using Markdown syntax to write some content">{{ original_content }}</textarea> 
+        <button type="submit">Save edited page</button>
+    </form>
+
+
+{% endblock %}

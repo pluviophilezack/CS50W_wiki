@@ -1,0 +1,1 @@
+Flask is a framework that is similar to Django.
