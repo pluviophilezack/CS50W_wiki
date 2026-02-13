@@ -71,6 +71,12 @@ def new_page(request):
             return render(request, "encyclopedia/error.html", {
                 "message": "The entry already exist."
             })
+
+        if "/" in title or "<" in title:
+            return render(request, "encyclopedia/error.html", {"message": "標題包含非法字元！"})
+
+        if "/" in content or "<" in content:
+            return render(request, "encyclopedia/error.html", {"message": "內文包含非法字元！"})
         
         # Save it to disk
         util.save_entry(title, content)
